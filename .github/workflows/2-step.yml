@@ -29,12 +29,12 @@ jobs:
             exit 0
           fi
 
-          if ! grep -Eq 'interface\\s+(AbstractFactory|FabricaAbstracta)\\b' "$FILE"; then
+          if ! grep -Eq "interface\\s+(AbstractFactory|FabricaAbstracta)\\b" "$FILE"; then
             echo "⏭️ Debe existir una interfaz 'AbstractFactory' o 'FabricaAbstracta'."
             exit 0
           fi
 
-          if ! grep -Eq 'interface\\s+(Product|Producto)' "$FILE"; then
+          if ! grep -Eq "interface\\s+(Product|Producto)" "$FILE"; then
             echo "⏭️ Debes modelar al menos una interfaz de producto con el nombre 'Product...' o 'Producto...'."
             exit 0
           fi

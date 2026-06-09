@@ -47,9 +47,7 @@ class AbstractFactoryDemo {
 fun main() {
     val demo = AbstractFactoryDemo()
 
-    // Variante 1: familia deportiva — motor V8 + panel negro
-    println("🏎️  " + demo.ejecutar(FabricaDeportiva()))
-
-    // Variante 2: familia ecológica — motor eléctrico + panel verde
-    println("🌱  " + demo.ejecutar(FabricaEcologica()))
+    println("Deportivo  " + demo.ejecutar(FabricaDeportiva()))
+    println("Eléctrico  " + demo.ejecutar(FabricaEcologica()))
+    
 }
