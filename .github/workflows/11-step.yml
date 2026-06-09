@@ -35,7 +35,7 @@ jobs:
           fi
 
           if ! grep -Eq '(map|cache)' "$FILE"; then
-            echo "⏭️ Debes usar un `map` o `cache` para reutilizar instancias."
+            echo "⏭️ Debes usar un 'map' o 'cache' para reutilizar instancias."
             exit 0
           fi
 

@@ -30,7 +30,7 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Implementation|Implementacion)\\b' "$FILE"; then
-            echo "⏭️ Debes definir una interfaz `Implementation` o `Implementacion`."
+            echo "⏭️ Debes definir una interfaz 'Implementation' o 'Implementacion'."
             exit 0
           fi
 

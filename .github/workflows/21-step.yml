@@ -40,7 +40,7 @@ jobs:
           fi
 
           if ! grep -Eq 'fun\\s+(templateMethod|metodoPlantilla)\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir `templateMethod(...)` o `metodoPlantilla(...)`."
+            echo "⏭️ Debe existir 'templateMethod(...)' o 'metodoPlantilla(...)'."
             exit 0
           fi
 

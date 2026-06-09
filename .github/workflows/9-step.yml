@@ -30,7 +30,7 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Component|Componente)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una interfaz `Component` o `Componente`."
+            echo "⏭️ Debe existir una interfaz 'Component' o 'Componente'."
             exit 0
           fi
 

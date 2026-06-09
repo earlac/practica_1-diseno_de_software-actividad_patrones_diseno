@@ -30,12 +30,12 @@ jobs:
           fi
 
           if ! grep -Eq 'class\\s+Memento\\b' "$FILE"; then
-            echo "⏭️ Debe existir una clase `Memento`."
+            echo "⏭️ Debe existir una clase 'Memento'."
             exit 0
           fi
 
           if ! grep -Eq 'fun\\s+(save|guardar)\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir un método `save(...)` o `guardar(...)`."
+            echo "⏭️ Debe existir un método 'save(...)' o 'guardar(...)'."
             exit 0
           fi
 

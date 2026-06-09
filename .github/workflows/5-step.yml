@@ -30,7 +30,7 @@ jobs:
           fi
 
           if ! grep -Eq '(\\bobject\\s+[A-Z][A-Za-z0-9_]*|companion\\s+object)' "$FILE"; then
-            echo "⏭️ Debes usar `object` o `companion object` para modelar el singleton."
+            echo "⏭️ Debes usar 'object' o 'companion object' para modelar el singleton."
             exit 0
           fi
 

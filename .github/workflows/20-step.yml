@@ -30,12 +30,12 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Strategy|Estrategia)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una interfaz `Strategy` o `Estrategia`."
+            echo "⏭️ Debe existir una interfaz 'Strategy' o 'Estrategia'."
             exit 0
           fi
 
           if ! grep -Eq 'fun\\s+(execute|ejecutar)\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir `execute(...)` o `ejecutar(...)`."
+            echo "⏭️ Debe existir 'execute(...)' o 'ejecutar(...)'."
             exit 0
           fi
 

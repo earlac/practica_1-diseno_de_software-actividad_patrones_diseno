@@ -30,7 +30,7 @@ jobs:
           fi
 
           if ! grep -Eq 'class\\s+(Facade|Fachada)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una clase `Facade` o `Fachada`."
+            echo "⏭️ Debe existir una clase 'Facade' o 'Fachada'."
             exit 0
           fi
 

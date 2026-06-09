@@ -30,12 +30,12 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Observer|Observador)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una interfaz `Observer` u `Observador`."
+            echo "⏭️ Debe existir una interfaz 'Observer' u 'Observador'."
             exit 0
           fi
 
           if ! grep -Eq 'fun\\s+(update|actualizar)\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir `update(...)` o `actualizar(...)`."
+            echo "⏭️ Debe existir 'update(...)' o 'actualizar(...)'."
             exit 0
           fi
 

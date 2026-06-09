@@ -30,12 +30,12 @@ jobs:
           fi
 
           if ! grep -Eq 'fun\\s+hasNext\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir `hasNext()`."
+            echo "⏭️ Debe existir 'hasNext()'."
             exit 0
           fi
 
           if ! grep -Eq 'fun\\s+next\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir `next()`."
+            echo "⏭️ Debe existir 'next()'."
             exit 0
           fi
 

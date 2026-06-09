@@ -30,12 +30,12 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Mediator|Mediador)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una interfaz `Mediator` o `Mediador`."
+            echo "⏭️ Debe existir una interfaz 'Mediator' o 'Mediador'."
             exit 0
           fi
 
           if ! grep -Eq 'fun\\s+(notify|notificar)\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir un método `notify(...)` o `notificar(...)`."
+            echo "⏭️ Debe existir un método 'notify(...)' o 'notificar(...)'."
             exit 0
           fi
 

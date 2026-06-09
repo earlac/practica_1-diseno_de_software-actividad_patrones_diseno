@@ -30,7 +30,7 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Target|Objetivo)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una interfaz `Target` u `Objetivo`."
+            echo "⏭️ Debe existir una interfaz 'Target' u 'Objetivo'."
             exit 0
           fi
 

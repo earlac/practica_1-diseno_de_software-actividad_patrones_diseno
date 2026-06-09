@@ -30,12 +30,12 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(State|Estado)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una interfaz `State` o `Estado`."
+            echo "⏭️ Debe existir una interfaz 'State' o 'Estado'."
             exit 0
           fi
 
           if ! grep -Eq 'fun\\s+(handle|manejar)\\s*\\(' "$FILE"; then
-            echo "⏭️ Debe existir `handle(...)` o `manejar(...)`."
+            echo "⏭️ Debe existir 'handle(...)' o 'manejar(...)'."
             exit 0
           fi
 

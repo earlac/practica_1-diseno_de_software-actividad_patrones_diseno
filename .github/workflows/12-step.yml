@@ -30,12 +30,12 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Subject|Sujeto)\\b' "$FILE"; then
-            echo "⏭️ Debe existir una interfaz `Subject` o `Sujeto`."
+            echo "⏭️ Debe existir una interfaz 'Subject' o 'Sujeto'."
             exit 0
           fi
 
           if ! grep -Eq 'class\\s+Proxy\\b|class\\s+[A-Za-z0-9_]*Proxy[A-Za-z0-9_]*\\s*:\\s*(Subject|Sujeto)' "$FILE"; then
-            echo "⏭️ Debe existir una clase `Proxy` que implemente el sujeto."
+            echo "⏭️ Debe existir una clase 'Proxy' que implemente el sujeto."
             exit 0
           fi
 
