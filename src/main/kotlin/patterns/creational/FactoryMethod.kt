@@ -1,6 +1,6 @@
 package patterns.creational
 
-interface  {
+interface Product {
     fun descripcion(): String
 }
 
