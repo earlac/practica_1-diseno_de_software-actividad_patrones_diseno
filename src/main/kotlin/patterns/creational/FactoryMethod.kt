@@ -26,5 +26,4 @@ class FactoryMethodDemo {
         val taller: TallerPendiente = TallerLocal()
         return taller.prepararPedido()
     }
-    
 }
