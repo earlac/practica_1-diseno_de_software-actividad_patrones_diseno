@@ -30,7 +30,7 @@ jobs:
           fi
 
           if ! grep -Eq 'interface\\s+(Product|Producto)\\b' "$FILE"; then
-            echo "⏭️ El archivo debe declarar una interfaz `Product` o `Producto`."
+            echo "⏭️ El archivo debe declarar una interfaz "Product" o "Producto"."
             exit 0
           fi
 
