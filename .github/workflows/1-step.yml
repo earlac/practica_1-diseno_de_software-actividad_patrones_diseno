@@ -34,8 +34,8 @@ jobs:
             exit 0
           fi
 
-          if ! grep -Eq '(abstract\\s+fun\\s+(create|crearProducto)\\s*\\(|fun\\s+createProduct\\s*\\()' "$FILE"; then
-            echo "⏭️ Debe existir un método fábrica abstracto como `create`, `createProduct` o `crearProducto`."
+          if ! grep -Eq "(abstract\\s+fun\\s+(create|crearProducto)\\s*\\(|fun\\s+createProduct\\s*\\()" "$FILE"; then
+            echo "⏭️ Debe existir un método fábrica abstracto como `create`, "createProduct" o "crearProducto"."
             exit 0
           fi
 
