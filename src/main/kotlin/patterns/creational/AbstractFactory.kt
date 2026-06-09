@@ -1,39 +1,38 @@
 package patterns.creational
 
-interface Motor {
+interface ProductoMotor {
     fun tipo(): String
 }
 
-interface Panel {
+interface ProductoPanel {
     fun tema(): String
 }
 
 interface AbstractFactory {
-    fun crearMotor(): Motor
-    fun crearPanel(): Panel
+    fun crearMotor(): ProductoMotor
+    fun crearPanel(): ProductoPanel
 }
 
-class MotorDeportivo : Motor {
+class MotorDeportivo : ProductoMotor {
     override fun tipo(): String = "Motor deportivo"
 }
-class PanelDeportivo : Panel {
+class PanelDeportivo : ProductoPanel {
     override fun tema(): String = "Panel negro"
 }
 class FabricaDeportiva : AbstractFactory {
-    override fun crearMotor(): Motor = MotorDeportivo()
-    override fun crearPanel(): Panel = PanelDeportivo()
+    override fun crearMotor(): ProductoMotor = MotorDeportivo()
+    override fun crearPanel(): ProductoPanel = PanelDeportivo()
 }
 
-
-class MotorElectrico : Motor {
+class MotorElectrico : ProductoMotor {
     override fun tipo(): String = "Motor eléctrico"
 }
-class PanelEcologico : Panel {
+class PanelEcologico : ProductoPanel {
     override fun tema(): String = "Panel verde"
 }
 class FabricaEcologica : AbstractFactory {
-    override fun crearMotor(): Motor = MotorElectrico()
-    override fun crearPanel(): Panel = PanelEcologico()
+    override fun crearMotor(): ProductoMotor = MotorElectrico()
+    override fun crearPanel(): ProductoPanel = PanelEcologico()
 }
 
 class AbstractFactoryDemo {
@@ -49,5 +48,4 @@ fun main() {
 
     println("Deportivo  " + demo.ejecutar(FabricaDeportiva()))
     println("Eléctrico  " + demo.ejecutar(FabricaEcologica()))
-    
 }
