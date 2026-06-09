@@ -1,10 +1,5 @@
 package patterns.creational
 
-/**
- * Interfaz que define el contrato de un Producto creado por el Factory Method.
- * Cualquier producto concreto debe implementar [descripcion], que retorna
- * una cadena describiendo el resultado o característica del producto.
- */
 interface Producto {
     fun descripcion(): String
 }
